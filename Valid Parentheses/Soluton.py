@@ -42,7 +42,5 @@ class Solution:
                 left_bracket = stack.pop()
                 if brackets[left_bracket] != c:
                     return False
-        if stack:
-            return False
-        return True
+        return len(stack) == 0
 
